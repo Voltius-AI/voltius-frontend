@@ -1,5 +1,6 @@
 import React from "react";
 import { Button } from "../ui/button";
+import Timeline from "../utility/Timeline";
 
 const Hero = () => {
   return (
@@ -61,12 +62,14 @@ const Hero = () => {
         <h1 className="flex justify-center text-5xl text-purple-500">
           OUR ROADMAP
         </h1>
+        <Timeline />
       </div>
       <hr className="mt-24 border-white" />
       <div className="mt-40">
         <h1 className="flex justify-center text-5xl text-purple-500 mb-14">
           OUR TEAM
         </h1>
+
         <div className="flex flex-row gap-16 ml-10"></div>
       </div>
       <hr className="mt-24 border-white" />
