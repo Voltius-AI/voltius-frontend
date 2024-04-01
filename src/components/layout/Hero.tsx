@@ -1,6 +1,7 @@
 import React from "react";
 import { Button } from "../ui/button";
 import Timeline from "../utility/Timeline";
+import MemberCard from "../utility/MemberCard";
 
 const Hero = () => {
   return (
@@ -69,7 +70,12 @@ const Hero = () => {
         <h1 className="flex justify-center text-5xl text-purple-500 mb-14">
           OUR TEAM
         </h1>
-
+        <div className="flex flex-row gap-16 ml-10">
+          <MemberCard />
+          <MemberCard />
+          <MemberCard />
+          <MemberCard />
+        </div>
         <div className="flex flex-row gap-16 ml-10"></div>
       </div>
       <hr className="mt-24 border-white" />
