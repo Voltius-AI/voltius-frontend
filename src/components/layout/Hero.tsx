@@ -45,7 +45,7 @@ const Hero = () => {
       </div>
       <hr className="mt-24 border-white" />
       <div className="mt-40">
-        <h1 className="flex justify-center text-5xl text-purple-500">
+        <h1 className="flex justify-center text-center text-5xl text-purple-500">
           SMART CONTRACTS
         </h1>
         <p className="pt-10">
@@ -60,7 +60,7 @@ const Hero = () => {
       </div>
       <hr className="mt-24 border-white" />
       <div className="mt-40">
-        <h1 className="flex justify-center text-5xl text-purple-500">
+        <h1 className="flex justify-center text-center text-5xl text-purple-500">
           OUR ROADMAP
         </h1>
         <Timeline />
@@ -70,17 +70,16 @@ const Hero = () => {
         <h1 className="flex justify-center text-5xl text-purple-500 mb-14">
           OUR TEAM
         </h1>
-        <div className="flex flex-row gap-16 ml-10">
+        <div className="grid grid-cols-2 gap-4 sm:grid-cols-4 sm:gap-3 sm:ml-10">
           <MemberCard />
           <MemberCard />
           <MemberCard />
           <MemberCard />
         </div>
-        <div className="flex flex-row gap-16 ml-10"></div>
       </div>
       <hr className="mt-24 border-white" />
       <div className="mt-40">
-        <h1 className="flex justify-center text-5xl text-purple-500">
+        <h1 className="flex justify-center text-center text-5xl text-purple-500">
           RECENT BLOGS
         </h1>
       </div>

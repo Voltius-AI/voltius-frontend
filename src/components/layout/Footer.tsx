@@ -6,9 +6,9 @@ const Footer = () => {
   return (
     <>
       <hr className="mt-24 border-white" />
-      <footer className="flex mt-24 mb-20">
-        <div>
-          <a href="" className="pl-20 text-2xl">
+      <footer className="mt-10 mb-6 sm:grid sm:grid-cols-12">
+        <div className="sm:col-span-4">
+          <a href="" className=" text-2xl">
             <Image src={"/Voltius.png"} alt="" width={150} height={150} />
           </a>
           <div className="pt-8 space-y-2 text-3xl">
@@ -17,28 +17,29 @@ const Footer = () => {
           </div>
           <p className="pt-5 text-gray-400">All rights reserved.</p>
         </div>
+        <div className="sm:col-span-5"></div>
 
-        <div className="flex ml-96 mt-5">
+        <div className="sm:col-span-3 flex flex-row gap-6 mt-5 ">
           <div className="space-y-5">
             <div>
-              <Link href={""} className="ml-24 text-purple-500">
+              <Link href={""} className=" text-purple-500">
                 Company
               </Link>
             </div>
             <div>
-              <Link href={""} className="ml-24">
+              <Link href={""} className="">
                 Whitepaper
               </Link>
             </div>
           </div>
           <div className="space-y-5">
             <div>
-              <Link href={""} className="ml-20 p-2 text-purple-500">
+              <Link href={""} className="  text-purple-500">
                 Contact us
               </Link>
             </div>
             <div>
-              <Link href={""} className="ml-20 p-2 underline">
+              <Link href={""} className=" underline">
                 Mail ID
               </Link>
             </div>

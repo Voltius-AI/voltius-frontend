@@ -1,7 +1,7 @@
 const Timeline = () => {
   return (
     <div className="flex flex-col md:flex-row ">
-      <div className="ml-20 md:w-1/2 ">
+      <div className=" ">
         <div className="relative md:mx-auto md:max-w-lg">
           {/* ////////////////////////Timeline elements/////////////////////////////// */}
           <div className="relative flex items-center group">
