@@ -70,7 +70,7 @@ const Hero = () => {
         <h1 className="flex justify-center text-5xl text-purple-500 mb-14">
           OUR TEAM
         </h1>
-        <div className="grid grid-cols-2 gap-4 sm:grid-cols-4 sm:gap-3 sm:ml-10">
+        <div className=" grid grid-cols-2 gap-3 gap-y-10 ml-10 md:grid-cols-3 lg:grid-cols-4 lg:gap-4 sm:ml-20">
           <MemberCard />
           <MemberCard />
           <MemberCard />

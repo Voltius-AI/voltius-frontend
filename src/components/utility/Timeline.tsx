@@ -1,8 +1,14 @@
+"use client";
+
+import { motion } from "framer-motion";
+import { slideIn } from "../../utils/motion";
+import EarthCanvas from "../../components/canvas/Earth";
+
 const Timeline = () => {
   return (
-    <div className="flex flex-col md:flex-row ">
-      <div className=" ">
-        <div className="relative md:mx-auto md:max-w-lg">
+    <div className="grid grid-cols-1 lg:grid-cols-2">
+      <div className="mx-auto ">
+        <div className="relative ">
           {/* ////////////////////////Timeline elements/////////////////////////////// */}
           <div className="relative flex items-center group">
             <div className="flex-shrink-0 w-6 h-6 rounded-full -mt-7 bg-white">
@@ -97,7 +103,12 @@ const Timeline = () => {
           {/* Add more timeline items as needed */}
         </div>
       </div>
-      <div className="mt-40 ml-16">3D Model</div>
+      <motion.div
+        variants={slideIn("right", "tween", 0.2, 1)}
+        className="w-80 h-80 mt-20  mx-auto lg:mt-28 lg:w-[500px] lg:h-[600px] "
+      >
+        <EarthCanvas />
+      </motion.div>
     </div>
   );
 };
