@@ -30,7 +30,7 @@ const Hero = () => {
           cutting-edge AI algorithms to ensure the integrity and
           <br />
           reliability of blockchain transactions. Our approach is not just about
-          safeguarding digital assets; it's about empowering the
+          safeguarding digital assets; it&apos;s about empowering the
           <br />
           entire blockchain ecosystem to reach its full potential.
           <br />
@@ -58,7 +58,7 @@ const Hero = () => {
           cutting-edge AI algorithms to ensure the integrity and
           <br />
           reliability of blockchain transactions. Our approach is not just about
-          safeguarding digital assets; it's about empowering the
+          safeguarding digital assets; it&apos;s about empowering the
           <br />
           entire blockchain ecosystem to reach its full potential.
           <br />
