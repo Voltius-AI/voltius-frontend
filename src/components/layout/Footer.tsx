@@ -22,7 +22,7 @@ const Footer = () => {
         <div className="sm:col-span-3 flex flex-row gap-6 mt-5 ">
           <div className="space-y-5">
             <div>
-              <Link href={""} className=" text-purple-500">
+              <Link href={""} className=" text-[#6842f4]">
                 Company
               </Link>
             </div>
@@ -34,7 +34,7 @@ const Footer = () => {
           </div>
           <div className="space-y-5">
             <div>
-              <Link href={""} className="  text-purple-500">
+              <Link href={""} className="  text-[#6842f4]">
                 Contact us
               </Link>
             </div>

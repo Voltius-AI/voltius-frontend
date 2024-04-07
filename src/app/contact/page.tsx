@@ -5,7 +5,7 @@ const page = () => {
   return (
     <>
       <div className="mt-32">
-        <h1 className="text-4xl text-purple-500">Hello!</h1>
+        <h1 className="text-4xl text-[#6842f4]">Hello!</h1>
         <p className="text-2xl mt-2">Hope you are doing well!</p>
         <p className="mt-4">
           Please fill this form and someone from our team will get back to you

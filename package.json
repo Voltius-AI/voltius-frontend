@@ -21,7 +21,8 @@
     "react-dom": "^18",
     "react-parallax-tilt": "^1.7.219",
     "tailwind-merge": "^2.2.2",
-    "tailwindcss-animate": "^1.0.7"
+    "tailwindcss-animate": "^1.0.7",
+    "tailwindcss-gradient": "^1.1.0"
   },
   "devDependencies": {
     "@types/node": "^20",

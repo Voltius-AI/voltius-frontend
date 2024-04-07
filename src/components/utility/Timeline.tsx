@@ -11,14 +11,14 @@ const Timeline = () => {
         <div className="relative ">
           {/* ////////////////////////Timeline elements/////////////////////////////// */}
           <div className="relative flex items-center group">
-            <div className="flex-shrink-0 w-6 h-6 rounded-full -mt-7 bg-white">
+            <div className="flex-shrink-0 w-6 h-6 rounded-full -mt-7 bg-white hover:bg-[#6842f4]">
               <div className="mt-7 ml-2.5 text-xs">|</div>
               <div className="mt-7 ml-2.5 text-xs">|</div>
               <div className="mt-7 ml-2.5 text-xs">|</div>
               <div className="mt-7 ml-2.5 text-xs">|</div>
             </div>
             <div className="ml-6 mt-24">
-              <h4 className="text-3xl font-semibold text-white">
+              <h4 className="text-3xl font-semibold text-white hover:text-[#6842f4]">
                 ESTABLISHING AND INNOVATING
               </h4>
               <p className="mt-3 text-white">
@@ -36,14 +36,14 @@ const Timeline = () => {
           {/* Add more timeline items as needed */}
 
           <div className="relative flex items-center group">
-            <div className="flex-shrink-0 w-6 h-6 rounded-full -mt-7 bg-white">
+            <div className="flex-shrink-0 w-6 h-6 rounded-full -mt-7 bg-white hover:bg-[#6842f4]">
               <div className="mt-7 ml-2.5 text-xs">|</div>
               <div className="mt-7 ml-2.5 text-xs">|</div>
               <div className="mt-7 ml-2.5 text-xs">|</div>
               <div className="mt-7 ml-2.5 text-xs">|</div>
             </div>
             <div className="ml-6 mt-16">
-              <h4 className="text-3xl font-semibold text-white">
+              <h4 className="text-3xl font-semibold hover:text-[#6842f4]">
                 TESTING AND LAUNCHING
               </h4>
               <p className="mt-3 text-white">
@@ -58,14 +58,14 @@ const Timeline = () => {
 
           {/* Add more timeline items as needed */}
           <div className="relative flex items-center group">
-            <div className="flex-shrink-0 w-6 h-6 rounded-full -mt-7 bg-white">
+            <div className="flex-shrink-0 w-6 h-6 rounded-full -mt-7 bg-white hover:bg-[#6842f4]">
               <div className="mt-7 ml-2.5 text-xs">|</div>
               <div className="mt-7 ml-2.5 text-xs">|</div>
               <div className="mt-7 ml-2.5 text-xs">|</div>
               <div className="mt-7 ml-2.5 text-xs">|</div>
             </div>
             <div className="ml-6 mt-16">
-              <h4 className="text-3xl font-semibold text-white">
+              <h4 className="text-3xl font-semibold hover:text-[#6842f4]">
                 SCALING AND EVOLVING
               </h4>
               <p className="mt-3 text-white">
@@ -80,14 +80,14 @@ const Timeline = () => {
 
           {/* Add more timeline items as needed */}
           <div className="relative flex items-center group">
-            <div className="flex-shrink-0 w-6 h-6 rounded-full -mt-7 bg-white">
+            <div className="flex-shrink-0 w-6 h-6 rounded-full -mt-7 bg-white hover:bg-[#6842f4]">
               <div className="mt-7 ml-2.5 text-xs">|</div>
               <div className="mt-7 ml-2.5 text-xs">|</div>
               <div className="mt-7 ml-2.5 text-xs">|</div>
               <div className="flex-shrink-0 w-3 h-3 rounded-full ml-1.5 bg-white"></div>
             </div>
             <div className="ml-6 mt-16">
-              <h4 className="text-3xl font-semibold text-white">
+              <h4 className="text-3xl font-semibold hover:text-[#6842f4]">
                 BROADENING HORIZONS
               </h4>
               <p className="mt-3 text-white">
