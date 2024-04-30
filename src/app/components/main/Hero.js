@@ -20,7 +20,7 @@ const Hero = () => {
       <ViewObserver valueId={"home"}>
         <div
           id="home"
-          className=" -z-50 min-h-screen h-full w-full flex flex-col items-center justify-center gap-8 lg:gap-12 mt-40"
+          className="mt-28 sm:mt-24 -z-50 min-h-screen h-full w-full flex flex-col items-center justify-center gap-8 lg:gap-12"
         >
           <h1 className="text-center scroll-m-20 text-6xl font-extrabold tracking-tight leading-none lg:text-8xl opacity-85">
             <span>Elevating Blockchain</span>
@@ -33,7 +33,7 @@ const Hero = () => {
             Revolutionizing Smart Contract Security
           </h4>
 
-          <div className="flex gap-4">
+          <div className="flex gap-4 sm:flex-row flex-col">
             <input
               type="text"
               className="bg-slate-300 bg-opacity-75 rounded-lg text-xl outline-none px-4 py-2 w-96 text-indigo-950 font-medium placeholder:text-indigo-950"
@@ -43,14 +43,14 @@ const Hero = () => {
             />
             <button
               onClick={() => mutate({ email })}
-              className="bg-slate-400 bg-opacity-60 rounded-lg px-4 font-medium"
+              className="bg-slate-400 bg-opacity-60 rounded-lg px-4 py-2 font-medium"
               disabled={isLoading}
             >
               {isLoading ? "Loading..." : "Join Waitlist"}
             </button>
           </div>
 
-          <div className="absolute bottom-3 right-3">
+          <div className="absolute bottom-28 right-3">
             <a
               href="https://docsend.com/view/9jgbtiig65yamrew"
               rel="noopener"
