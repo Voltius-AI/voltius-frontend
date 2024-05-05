@@ -33,7 +33,10 @@ const Technology = () => {
             {data.technology.paragraphs.map((paragraph, index) => (
               <p
                 key={index}
-                className="bg-clip-text text-transparent drop-shadow-2xl bg-gradient-to-b from-white/90 to-white/80 inter-var  [&:not(:first-child)]:mt-5  text-justify"
+                style={{
+                  textShadow: "2px 6px 12px rgba(0,0,0,0.67)",
+                }}
+                className="bg-clip-text text-transparent drop-shadow-4xl bg-gradient-to-b from-white/90 to-white/80 inter-var  [&:not(:first-child)]:mt-5 font-normal  text-justify"
               >
                 {paragraph}
               </p>

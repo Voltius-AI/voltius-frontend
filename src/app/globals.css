@@ -83,16 +83,40 @@ body {
 .paper:hover::after {
   right: 5px;
 }
+
 .letter {
   background: #fff;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   margin: 26px auto 0;
   max-width: 550px;
   min-height: 300px;
-  padding: 24px;
   position: relative;
   width: 80%;
 }
+
+@media (max-width: 540px) {
+  .letter {
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    margin: 26px auto 0;
+    max-width: 550px;
+    min-height: 300px;
+    position: relative;
+    width: 90%;
+  }
+}
+@media (max-width: 400px) {
+  .letter {
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    margin: 26px auto 0;
+    max-width: 550px;
+    min-height: 300px;
+    position: relative;
+    width: 95%;
+  }
+}
+
 .letter:before,
 .letter:after {
   content: "";
@@ -102,14 +126,14 @@ body {
   z-index: -1;
 }
 .letter:before {
-  background: #fafafa;
+  background: #fafafa84;
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
   left: -5px;
   top: 4px;
   transform: rotate(-2.5deg);
 }
 .letter:after {
-  background: #f6f6f6;
+  background: #f6f6f67e;
   box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
   right: -3px;
   top: 1px;

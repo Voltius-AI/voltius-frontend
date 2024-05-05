@@ -46,7 +46,7 @@ const Header = () => {
   }, []);
 
   return (
-    <header className="z-50 fixed top-4 left-0 right-0 mt-4 ml-3 mr-5 flex items-center justify-between lg:flex-row flex-col gap-4">
+    <header className="z-50 fixed top-0 left-0 right-0 sm:mt-4 sm:ml-3 sm:mr-3 mt-2 ml-2 mr-2 flex items-center justify-between lg:flex-row flex-col gap-4">
       <img
         src="/logo_mono.svg"
         alt="logo"

@@ -54,7 +54,7 @@ const Roadmap = () => {
                 </div>
                 <BorderGradientCard
                   className="font-mono p-3 sm:text-8xl text-6xl leading-[1] rounded-[22px] sm:p-10 bg-zinc-900"
-                  containerClassName="ml-auto sticky sm:top-24 top-40  right-0 w-fit"
+                  containerClassName="ml-auto sticky sm:top-48 top-48  right-0 w-fit"
                 >
                   0{item.id}
                 </BorderGradientCard>

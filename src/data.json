@@ -10,7 +10,7 @@
     ]
   },
   "technology": {
-    "title": "technology",
+    "title": "Technology",
     "subtitle": "Next-gen blockchain intelligence",
     "video_url": "https://www.youtube-nocookie.com/embed/HcMHCP65lk0?controls=1&rel=0&playsinline=0&modestbranding=1&autoplay=0&enablejsapi=1&origin=https%3A%2F%2Fvoltius.ai&widgetid=1",
     "paragraphs": [
@@ -70,32 +70,32 @@
     "list": [
       {
         "id": 1,
-        "name": "John Doe",
-        "linkedIn": "CEO",
+        "name": "Chris Connor",
+        "linkedIn": "https://www.linkedin.com/in/chrisconnorny/",
         "imageUrl": "https://s8gf90.p3cdn1.secureserver.net/wp-content/uploads/2024/03/Chris-Connor.webp?time=1714076741"
       },
       {
         "id": 2,
-        "name": "John Doe",
+        "name": "Hunter Hall",
         "linkedIn": "CEO",
         "imageUrl": "https://s8gf90.p3cdn1.secureserver.net/wp-content/uploads/2024/03/Hunter-Hall.webp?time=1714076741"
       },
       {
         "id": 3,
-        "name": "John Doe",
-        "linkedIn": "CEO",
+        "name": "Timur Izmailov",
+        "linkedIn": "https://www.linkedin.com/in/timur-izmailov-a53524283/",
         "imageUrl": "https://s8gf90.p3cdn1.secureserver.net/wp-content/uploads/2024/03/Timur-Izmailov.webp?time=1714076741"
       },
       {
         "id": 4,
-        "name": "John Doe",
-        "linkedIn": "CEO",
+        "name": "Sami Bassra",
+        "linkedIn": "https://www.linkedin.com/in/bassra/",
         "imageUrl": "https://s8gf90.p3cdn1.secureserver.net/wp-content/uploads/2024/03/Sami-Bassra.webp?time=1714076741"
       },
       {
         "id": 5,
-        "name": "John Doe",
-        "linkedIn": "CEO",
+        "name": "Raza Khan",
+        "linkedIn": "https://www.linkedin.com/in/razaakhan/",
         "imageUrl": "https://s8gf90.p3cdn1.secureserver.net/wp-content/uploads/2024/03/Raza-Khan.webp?time=1714076741"
       }
     ]
