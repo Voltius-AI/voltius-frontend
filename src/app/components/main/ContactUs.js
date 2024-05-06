@@ -29,7 +29,7 @@ const ContactUs = () => {
           <p></p>
           <input
             type="text"
-            placeholder="hi@gamil.com"
+            placeholder="Your email here..."
             className="rounded-lg border border-gray-800 w-full focus:ring-opacity-20 relative z-10 mt-6  bg-gray-950 placeholder:text-gray-700 px-5 py-3"
             value={email}
             onChange={(e) => setEmail(e.target.value)}

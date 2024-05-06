@@ -17,6 +17,32 @@ export const propTabs = [
   { title: "Contact", value: "contact" },
 ];
 
+export function useScrollDirection() {
+  const [scrollDirection, setScrollDirection] = React.useState(null);
+
+  React.useEffect(() => {
+    let lastScrollY = window.pageYOffset;
+
+    const updateScrollDirection = () => {
+      const scrollY = window.pageYOffset;
+      const direction = scrollY > lastScrollY ? "down" : "up";
+      if (
+        direction !== scrollDirection &&
+        (scrollY - lastScrollY > 5 || scrollY - lastScrollY < -5)
+      ) {
+        setScrollDirection(direction);
+      }
+      lastScrollY = scrollY > 0 ? scrollY : 0;
+    };
+    window.addEventListener("scroll", updateScrollDirection); // add event listener
+    return () => {
+      window.removeEventListener("scroll", updateScrollDirection); // clean up
+    };
+  }, [scrollDirection]);
+
+  return scrollDirection;
+}
+
 export const useNavStore = create((set) => ({
   active: propTabs[0],
   setActive: (value) =>
@@ -26,6 +52,7 @@ export const useNavStore = create((set) => ({
 const Header = () => {
   const active = useNavStore((state) => state.active);
   const setActive = useNavStore((state) => state.setActive);
+  const scrollDirection = useScrollDirection();
 
   const [tabs, setTabs] = useState(propTabs);
 
@@ -46,7 +73,12 @@ const Header = () => {
   }, []);
 
   return (
-    <header className="z-50 fixed top-0 left-0 right-0 sm:mt-4 sm:ml-3 sm:mr-3 mt-2 ml-2 mr-2 flex items-center justify-between lg:flex-row flex-col gap-4">
+    <header
+      className={cn(
+        "transition-all duration-500 z-50 fixed top-0 left-0 right-0 sm:mt-4 sm:ml-3 sm:mr-3 mt-2 ml-2 mr-2 flex items-center justify-between lg:flex-row flex-col gap-4",
+        `${scrollDirection === "down" ? "md:-top-36 -top-48" : "top-0"}`
+      )}
+    >
       <img
         src="/logo_mono.svg"
         alt="logo"

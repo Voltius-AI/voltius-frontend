@@ -27,7 +27,24 @@ const Hero = () => {
             <span>
               <br />
             </span>
-            <span>Integrity</span>
+            <span>
+              Integrity{" "}
+              <span className="text-base font-normal tracking-normal">
+                with
+              </span>
+              <span
+                style={{
+                  width: "fit-content",
+                  "-webkit-text-fill-color": "transparent",
+                  backgroundImage:
+                    "linear-gradient(to right, rgb(54 208 232) 0%, rgb(228 99 223) 100%)",
+                  textShadow: "1px 1px 20px  rgb(160 225 235 / 48%)",
+                }}
+                className="bg-clip-text bg-[#ffffff]"
+              >
+                Ai
+              </span>
+            </span>
           </h1>
           <h4 className="mt-7 scroll-m-20 font-semibold tracking-tight opacity-75 lg:text-2xl] xl:text-3xl  text-xl mx-6 text-center">
             Revolutionizing Smart Contract Security

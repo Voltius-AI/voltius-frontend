@@ -6,7 +6,7 @@ export const useCreateContactService = () => {
   const { isError, isPending, isSuccess, mutate, status } = useMutation({
     mutationFn: createContactAPI,
     onSuccess: (data) => {
-      toast.success(data?.message);
+      toast.success("Thanks for reaching out! We'll be with you soon!");
     },
     onError: (error) => {
       toast.error(error?.response?.data?.message || "Something went wrong!");

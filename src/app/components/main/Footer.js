@@ -122,9 +122,78 @@ const Footer = () => {
               />
             </svg>
           </a>
+          <a
+            href="https://medium.com/@chris_voltius/about"
+            target="_blank"
+            className="text-white"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 48 48"
+              width="34px"
+              height="34px"
+            >
+              <linearGradient
+                id="~nVLpo1GG3OfFL9CbVAcxa"
+                x1="11.916"
+                x2="16.084"
+                y1="12.18"
+                y2="35.82"
+                gradientUnits="userSpaceOnUse"
+              >
+                <stop offset="0" stop-color="#6d6d6d" />
+                <stop offset=".438" stop-color="#626262" />
+                <stop offset=".998" stop-color="#454545" />
+              </linearGradient>
+              <circle
+                cx="14"
+                cy="24"
+                r="12"
+                fill="url(#~nVLpo1GG3OfFL9CbVAcxa)"
+              />
+              <linearGradient
+                id="~nVLpo1GG3OfFL9CbVAcxb"
+                x1="32.11"
+                x2="35.89"
+                y1="13.282"
+                y2="34.718"
+                gradientUnits="userSpaceOnUse"
+              >
+                <stop offset="0" stop-color="#6d6d6d" />
+                <stop offset=".438" stop-color="#626262" />
+                <stop offset=".998" stop-color="#454545" />
+              </linearGradient>
+              <ellipse
+                cx="34"
+                cy="24"
+                fill="url(#~nVLpo1GG3OfFL9CbVAcxb)"
+                rx="6"
+                ry="11"
+              />
+              <linearGradient
+                id="~nVLpo1GG3OfFL9CbVAcxc"
+                x1="42.289"
+                x2="45.711"
+                y1="14.295"
+                y2="33.705"
+                gradientUnits="userSpaceOnUse"
+              >
+                <stop offset="0" stop-color="#6d6d6d" />
+                <stop offset=".438" stop-color="#626262" />
+                <stop offset=".998" stop-color="#454545" />
+              </linearGradient>
+              <ellipse
+                cx="44"
+                cy="24"
+                fill="url(#~nVLpo1GG3OfFL9CbVAcxc)"
+                rx="2"
+                ry="10"
+              />
+            </svg>
+          </a>
         </div>
       </div>
-      <div className="flex w-full h-fit px-10 items-center pb-7">
+      <div className="flex w-full h-fit px-10 items-center sm:pb-7 pb-20">
         <h6 className="text-sm text-slate-500 text-opacity-75 self-end opacity-65">
           Copyright © {new Date().getFullYear()} Voltius. All rights reserved
         </h6>

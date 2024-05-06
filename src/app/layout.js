@@ -20,22 +20,24 @@ export default function RootLayout({ children }) {
         <link rel="icon" href="/voltius_favicon.png" />
         <style>{inter.styles}</style>
       </head>
-      <body className={inter.className}>
-        <ReactQueryProvider>{children}</ReactQueryProvider>
-        <ToastContainer
-          position="bottom-right"
-          autoClose={5000}
-          hideProgressBar={false}
-          newestOnTop={false}
-          closeOnClick
-          rtl={false}
-          pauseOnFocusLoss
-          draggable
-          pauseOnHover
-          theme="dark"
-          transition="Bounce"
-        />
-      </body>
+      <ReactQueryProvider>
+        <body className={inter.className}>
+          {children}
+          <ToastContainer
+            position="bottom-right"
+            autoClose={5000}
+            hideProgressBar={false}
+            newestOnTop={false}
+            closeOnClick
+            rtl={false}
+            pauseOnFocusLoss
+            draggable
+            pauseOnHover
+            theme="dark"
+            transition="Bounce"
+          />
+        </body>
+      </ReactQueryProvider>
     </html>
   );
 }

@@ -31,7 +31,7 @@ const Blogs = () => {
               width: "fit-content",
               "-webkit-text-fill-color": "transparent",
               backgroundImage:
-                "linear-gradient(to right, rgb(145 21 128) 0%, rgb(83, 42, 255) 100%)",
+                "linear-gradient(to right, rgb(249 3 219) 0%, rgb(255 172 42) 100%)",
             }}
             className="bg-clip-text bg-[#2D68CF] scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl lg:leading-tight leading-normal"
           >
