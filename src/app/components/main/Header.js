@@ -76,7 +76,7 @@ const Header = () => {
     <header
       className={cn(
         "transition-all duration-500 z-50 fixed top-0 left-0 right-0 sm:mt-4 sm:ml-3 sm:mr-3 mt-2 ml-2 mr-2 flex items-center justify-between lg:flex-row flex-col gap-4",
-        `${scrollDirection === "down" ? "md:-top-36 -top-48" : "top-0"}`
+        `${scrollDirection === "down" ? "sm:top-0 -top-48" : "top-0"}`
       )}
     >
       <img
