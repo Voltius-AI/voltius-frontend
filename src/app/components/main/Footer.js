@@ -123,7 +123,7 @@ const Footer = () => {
             </svg>
           </a>
           <a
-            href="https://medium.com/@chris_voltius/about"
+            href="https://medium.com/voltius"
             target="_blank"
             className="text-white"
           >
