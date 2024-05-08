@@ -27,23 +27,33 @@ const Hero = () => {
             <span>
               <br />
             </span>
-            <span>
+            <span className="sm:whitespace-nowrap flex flex-nowrap items-baseline justify-center">
               Integrity{" "}
               <span className="text-base font-normal tracking-normal">
                 with
               </span>
-              <span
-                style={{
-                  width: "fit-content",
-                  "-webkit-text-fill-color": "transparent",
-                  backgroundImage:
-                    "linear-gradient(to right, rgb(54 208 232) 0%, rgb(228 99 223) 100%)",
-                  textShadow: "1px 1px 20px  rgb(160 225 235 / 48%)",
-                }}
-                className="bg-clip-text bg-[#ffffff]"
+              <svg
+                className="h-[60px] md:h-[72px] lg:h-[80px] xl:h-[96px] w-[60px] md:w-[72px] lg:w-[80px] xl:w-[96px]"
               >
-                Ai
-              </span>
+                <defs>
+                  <linearGradient
+                    id="rainbow"
+                    x1="0"
+                    x2="50"
+                    y1="0"
+                    y2="100%"
+                    gradientUnits="userSpaceOnUse"
+                  >
+                    <stop stop-color="rgb(54 208 232)" offset="0%" />
+                    <stop stop-color="rgb(228 99 223)" offset="100%" />
+                  </linearGradient>
+                </defs>
+                <text fill="url(#rainbow)">
+                  <tspan font-size="1em" x="0" y="1em">
+                    Ai
+                  </tspan>
+                </text>
+              </svg>
             </span>
           </h1>
           <h4 className="mt-7 scroll-m-20 font-semibold tracking-tight opacity-75 lg:text-2xl] xl:text-3xl  text-xl mx-6 text-center">

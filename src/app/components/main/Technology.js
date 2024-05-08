@@ -18,15 +18,31 @@ const Technology = () => {
           <h2
             style={{
               width: "fit-content",
-              "-webkit-text-fill-color": "transparent",
-              backgroundImage:
-                "linear-gradient(to right, #a45f1c 0%, #532aff 100%)",
             }}
-            className="bg-clip-text bg-[#2D68CF] text-transparent drop-shadow-2xl scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl lg:leading-normal leading-normal"
+            className="text-transparent drop-shadow-2xl scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl lg:leading-normal leading-normal"
           >
-            {data.technology.title}
+            <svg className="h-[44px] lg:h-[60px]">
+              <defs>
+                <linearGradient
+                  id="rainbow_t"
+                  x1="0"
+                  x2="60%"
+                  y1="0"
+                  y2="100%"
+                  gradientUnits="userSpaceOnUse"
+                >
+                  <stop stop-color=" #a45f1c" offset="0%" />
+                  <stop stop-color="#532aff" offset="100%" />
+                </linearGradient>
+              </defs>
+              <text fill="url(#rainbow_t)">
+                <tspan font-size="1em" x="0" y="1em">
+                  {data.technology.title}
+                </tspan>
+              </text>
+            </svg>
           </h2>
-          <h3 className="bg-clip-text text-transparent drop-shadow-2xl bg-gradient-to-b from-white/90 to-white/60 inter-var mt-4 scroll-m-20 text-2xl font-medium tracking-tight">
+          <h3 className="text-[#ffffffb6] drop-shadow-2xl inter-var mt-4 scroll-m-20 text-2xl font-medium tracking-tight">
             {data.technology.subtitle}
           </h3>
           <div className="mt-8">
@@ -36,7 +52,7 @@ const Technology = () => {
                 style={{
                   textShadow: "2px 6px 12px rgba(0,0,0,0.67)",
                 }}
-                className="bg-clip-text text-transparent drop-shadow-4xl bg-gradient-to-b from-white/90 to-white/80 inter-var  [&:not(:first-child)]:mt-5 font-normal  text-justify"
+                className="text-[#ffffffb6] drop-shadow-4xl inter-var [&:not(:first-child)]:mt-5 font-normal  text-justify"
               >
                 {paragraph}
               </p>

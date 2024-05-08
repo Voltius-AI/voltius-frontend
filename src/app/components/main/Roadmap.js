@@ -17,22 +17,38 @@ const Roadmap = () => {
           <h2
             style={{
               width: "fit-content",
-              "-webkit-text-fill-color": "transparent",
-              backgroundImage:
-                "linear-gradient(to right, rgb(46 145 21) 0%, rgb(42 132 255) 100%)",
             }}
-            className="bg-clip-text bg-[#2D68CF] scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl"
+            className=" scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl"
           >
-            {data.roadmap.title}
+            <svg className="h-[44px] lg:h-[60px]">
+              <defs>
+                <linearGradient
+                  id="rainbow_r"
+                  x1="0"
+                  x2="60%"
+                  y1="0"
+                  y2="100%"
+                  gradientUnits="userSpaceOnUse"
+                >
+                  <stop stop-color="rgb(46 145 21)" offset="0%" />
+                  <stop stop-color="rgb(42 132 255)" offset="100%" />
+                </linearGradient>
+              </defs>
+              <text fill="url(#rainbow_r)">
+                <tspan font-size="1em" x="0" y="1em">
+                  {data.roadmap.title}
+                </tspan>
+              </text>
+            </svg>
           </h2>
-          <h3 className="bg-clip-text text-transparent drop-shadow-2xl bg-gradient-to-b from-white/90 to-white/60 inter-var  mt-4 scroll-m-20 text-2xl font-medium tracking-tight">
+          <h3 className="text-[#ffffffb6] drop-shadow-2xl inter-var mt-4 scroll-m-20 text-2xl font-medium tracking-tight">
             {data.roadmap.subtitle}
           </h3>
           <div className="mt-8">
             {data.roadmap.paragraphs.map((paragraph, index) => (
               <p
                 key={index}
-                className="bg-clip-text text-transparent drop-shadow-2xl bg-gradient-to-b from-white/90 to-white/80 inter-var  [&:not(:first-child)]:mt-5  text-justify"
+                className="drop-shadow-2xl inter-var  [&:not(:first-child)]:mt-5  text-justify"
               >
                 {paragraph}
               </p>
@@ -45,10 +61,10 @@ const Roadmap = () => {
                   <h2 className="mt-10 scroll-m-20 pb-2 text-3xl font-semibold tracking-tight transition-colors first:mt-0">
                     {item.title}
                   </h2>
-                  <h3 className="bg-clip-text text-transparent drop-shadow-2xl bg-gradient-to-b from-white/90 to-white/60 inter-var  mt-2 scroll-m-20 text-2xl font-medium tracking-tight">
+                  <h3 className="text-[#ffffffb6] drop-shadow-2xl inter-var  mt-2 scroll-m-20 text-2xl font-medium tracking-tight">
                     {item.subtitle}
                   </h3>
-                  <p className="mt-2 bg-clip-text text-transparent drop-shadow-2xl bg-gradient-to-b from-white/90 to-white/80 inter-var  text-justify">
+                  <p className="mt-2 text-[#ffffffb6] drop-shadow-2xl inter-var  text-justify">
                     {item.description}
                   </p>
                 </div>

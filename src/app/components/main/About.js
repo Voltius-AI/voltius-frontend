@@ -16,15 +16,31 @@ const About = () => {
           <h2
             style={{
               width: "fit-content",
-              "-webkit-text-fill-color": "transparent",
-              backgroundImage:
-                "linear-gradient(to right, rgb(126 21 145) 0%, rgb(42 255 247) 100%)",
             }}
-            className="bg-clip-text bg-[#2D68CF] scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl"
+            className=" scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl"
           >
-            {data.about.title}
+            <svg className="h-[44px] lg:h-[60px]">
+              <defs>
+                <linearGradient
+                  id="rainbow_a"
+                  x1="0"
+                  x2="50"
+                  y1="0"
+                  y2="100%"
+                  gradientUnits="userSpaceOnUse"
+                >
+                  <stop stop-color="rgb(126 21 145)" offset="0%" />
+                  <stop stop-color="rgb(42 255 247)" offset="100%" />
+                </linearGradient>
+              </defs>
+              <text fill="url(#rainbow_a)">
+                <tspan font-size="1em" x="0" y="1em">
+                  {data.about.title}
+                </tspan>
+              </text>
+            </svg>
           </h2>
-          <h3 className="bg-clip-text text-transparent drop-shadow-2xl bg-gradient-to-b from-white/90 to-white/60 inter-var  mt-4 scroll-m-20 text-2xl font-medium tracking-tight">
+          <h3 className="text-[#ffffffb6] drop-shadow-2xl inter-var  mt-4 scroll-m-20 text-2xl font-medium tracking-tight">
             {data.about.subtitle}
           </h3>
           <div className="flex flex-col gap-5 mt-10 items-start">
@@ -42,7 +58,7 @@ const About = () => {
               {data.about.paragraphs.map((paragraph, index) => (
                 <p
                   key={index}
-                  className="bg-clip-text text-transparent drop-shadow-2xl bg-gradient-to-b from-white/90 to-white/80 inter-var  [&:not(:first-child)]:mt-5  text-justify"
+                  className="text-[#ffffffb6] drop-shadow-2xl inter-var [&:not(:first-child)]:mt-5 text-justify"
                 >
                   {paragraph}
                 </p>

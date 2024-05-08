@@ -17,22 +17,38 @@ const OurTeam = () => {
           <h2
             style={{
               width: "fit-content",
-              "-webkit-text-fill-color": "transparent",
-              backgroundImage:
-                "linear-gradient(to right, rgb(195 225 27) 0%, rgb(255 42 42) 100%)",
             }}
-            className="bg-clip-text bg-[#2D68CF] scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl"
+            className="scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl"
           >
-            {data.our_team.title}
+            <svg className="h-[44px] lg:h-[60px]">
+              <defs>
+                <linearGradient
+                  id="rainbow_o"
+                  x1="0"
+                  x2="50"
+                  y1="0"
+                  y2="100%"
+                  gradientUnits="userSpaceOnUse"
+                >
+                  <stop stop-color="rgb(195 225 27)" offset="0%" />
+                  <stop stop-color="rgb(255 42 42)" offset="100%" />
+                </linearGradient>
+              </defs>
+              <text fill="url(#rainbow_o)">
+                <tspan font-size="1em" x="0" y="1em">
+                  {data.our_team.title}
+                </tspan>
+              </text>
+            </svg>
           </h2>
-          <h3 className="bg-clip-text text-transparent drop-shadow-2xl bg-gradient-to-b from-white/90 to-white/60 inter-var  mt-4 scroll-m-20 text-2xl font-medium tracking-tight">
+          <h3 className="text-[#ffffffb6] drop-shadow-2xl inter-var  mt-4 scroll-m-20 text-2xl font-medium tracking-tight">
             {data.our_team.subtitle}
           </h3>
           <div className="mt-8">
             {data.our_team.paragraphs.map((paragraph, index) => (
               <p
                 key={index}
-                className="bg-clip-text text-transparent drop-shadow-2xl bg-gradient-to-b from-white/90 to-white/80 inter-var  [&:not(:first-child)]:mt-5  text-justify"
+                className="text-[#ffffffb6] drop-shadow-2xl inter-var [&:not(:first-child)]:mt-5  text-justify"
               >
                 {paragraph}
               </p>

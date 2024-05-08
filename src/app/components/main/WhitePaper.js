@@ -26,32 +26,34 @@ const WhitePaper = () => {
 
         <div className="letter text-black p-1 flex flex-col w-full max-w-screen-xl mx-1 sm:mx-10 sm:my-20 my-2">
           <div className="bg-black text-gray-300 opacity-70 backdrop-blur-3xl z-40 px-6 py-8">
-            <motion.h2
-              style={{
-                "-webkit-text-fill-color": "transparent",
-                // backgroundImage:
-                //   "linear-gradient(to right, #1c4ea4 0%, rgb(17 142 179 / 80%) 100%)",
-              }}
-              variants={animate ? variants : undefined}
-              initial={animate ? "initial" : undefined}
-              animate={animate ? "animate" : undefined}
-              transition={
-                animate
-                  ? {
-                      duration: 5,
-                      repeat: Infinity,
-                      repeatType: "reverse",
-                    }
-                  : undefined
-              }
+            <h2
               className={cn(
-                "will-change-transform bg-clip-text bg-[#2D68CF]  scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-6xl",
-                "bg-[radial-gradient(circle_farthest-side_at_0_100%,#00ccb1,transparent),radial-gradient(circle_farthest-side_at_100%_0,#7b61ff,transparent),radial-gradient(circle_farthest-side_at_100%_100%,#ffc414,transparent),radial-gradient(circle_farthest-side_at_0_0,#1ca0fb,#141316)]",
-                "bg-[radial-gradient(circle_farthest-side_at_0_100%,#00ccb1,transparent),radial-gradient(circle_farthest-side_at_100%_0,#7b61ff,transparent),radial-gradient(circle_farthest-side_at_100%_100%,#ffc414,transparent),radial-gradient(circle_farthest-side_at_0_0,#1ca0fb,#141316)]"
+                "will-change-transform scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-6xl"
+                // "bg-[radial-gradient(circle_farthest-side_at_0_100%,#00ccb1,transparent),radial-gradient(circle_farthest-side_at_100%_0,#7b61ff,transparent),radial-gradient(circle_farthest-side_at_100%_100%,#ffc414,transparent),radial-gradient(circle_farthest-side_at_0_0,#1ca0fb,#141316)]",
+                // "bg-[radial-gradient(circle_farthest-side_at_0_100%,#00ccb1,transparent),radial-gradient(circle_farthest-side_at_100%_0,#7b61ff,transparent),radial-gradient(circle_farthest-side_at_100%_100%,#ffc414,transparent),radial-gradient(circle_farthest-side_at_0_0,#1ca0fb,#141316)]"
               )}
             >
-              {data.whitepaper.title}
-            </motion.h2>
+              <svg className="h-[44px] lg:h-[60px]">
+                <defs>
+                  <linearGradient
+                    id="rainbow_w"
+                    x1="0"
+                    x2="80%"
+                    y1="0"
+                    y2="100%"
+                    gradientUnits="userSpaceOnUse"
+                  >
+                    <stop stop-color="rgb(42 255 247)" offset="0%" />
+                    <stop stop-color="rgb(126 21 145)" offset="100%" />
+                  </linearGradient>
+                </defs>
+                <text fill="url(#rainbow_w)">
+                  <tspan font-size="1em" x="0" y="1em">
+                    {data.whitepaper.title}
+                  </tspan>
+                </text>
+              </svg>
+            </h2>
             <h3 className="mt-4 scroll-m-20 sm:text-3xl text-2xl font-medium tracking-tight">
               {data.whitepaper.subtitle}
             </h3>

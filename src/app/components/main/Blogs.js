@@ -6,7 +6,6 @@ import StyledSlider from "../ui/styled-slider";
 import { BorderGradientCardUnified } from "../ui/border-gradient-card-unified";
 import ViewObserver from "../ui/ViewObserver";
 import useBlogListService from "@/services/blogList.service";
-
 import { format } from "date-fns";
 
 const Blogs = () => {
@@ -29,15 +28,32 @@ const Blogs = () => {
           <h2
             style={{
               width: "fit-content",
-              "-webkit-text-fill-color": "transparent",
-              backgroundImage:
-                "linear-gradient(to right, rgb(249 3 219) 0%, rgb(255 172 42) 100%)",
             }}
-            className="bg-clip-text bg-[#2D68CF] scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl lg:leading-tight leading-normal"
+            className="scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl lg:leading-tight leading-normal"
           >
-            Blog
+            <svg className="h-[44px] lg:h-[60px]">
+              <defs>
+                <linearGradient
+                  id="rainbow_b"
+                  x1="0"
+                  x2="50"
+                  y1="0"
+                  y2="100%"
+                  gradientUnits="userSpaceOnUse"
+                >
+                  <stop stop-color="rgb(249 3 219)" offset="0%" />
+                  <stop stop-color="rgb(255 172 42)" offset="100%" />
+                </linearGradient>
+              </defs>
+              <text fill="url(#rainbow_b)">
+                <tspan font-size="1em" x="0" y="1em">
+                  Blog
+                </tspan>
+              </text>
+            </svg>
           </h2>
-          <h3 className="bg-clip-text text-transparent drop-shadow-2xl bg-gradient-to-b from-white/90 to-white/60 inter-var  mt-4 scroll-m-20 text-2xl font-medium tracking-tight">
+
+          <h3 className="text-[#ffffffb6] drop-shadow-2xl inter-var mt-4 scroll-m-20 text-2xl font-medium tracking-tight">
             Next-Generation Blockchain Intelligence Insights
           </h3>
         </div>

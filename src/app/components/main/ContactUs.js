@@ -23,7 +23,7 @@ const ContactUs = () => {
         className="relative border mt-10 rounded-2xl border-slate-700 border-opacity-40 sm:mx-6 mx-4"
       >
         <div className="max-w-lg mx-auto px-4 py-16 flex flex-col">
-          <h1 className="relative z-10 text-4xl md:text-5xl  bg-clip-text text-transparent bg-gradient-to-b from-gray-200 to-gray-600 font-sans font-bold">
+          <h1 className="text-[#daebffbd]  relative z-10 text-4xl md:text-5xl font-sans font-bold">
             Contact Us
           </h1>
           <p></p>
