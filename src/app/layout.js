@@ -3,6 +3,7 @@ import "./globals.css";
 import ReactQueryProvider from "./ReactQueryProvider";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import { cn } from "@/lib/utils";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -13,7 +14,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="en" class="dark">
       <head>
         <title>{metadata.title}</title>
         <meta name="description" content={metadata.description} />
@@ -21,7 +22,7 @@ export default function RootLayout({ children }) {
         <style>{inter.styles}</style>
       </head>
       <ReactQueryProvider>
-        <body className={inter.className}>
+        <body className={cn([inter.className, "bg-black"])}>
           {children}
           <ToastContainer
             position="bottom-right"

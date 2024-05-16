@@ -48,7 +48,7 @@ const Roadmap = () => {
             {data.roadmap.paragraphs.map((paragraph, index) => (
               <p
                 key={index}
-                className="drop-shadow-2xl inter-var  [&:not(:first-child)]:mt-5  text-justify"
+                className="text-[#ffffffb6] drop-shadow-2xl inter-var  [&:not(:first-child)]:mt-5  text-justify"
               >
                 {paragraph}
               </p>
@@ -58,7 +58,7 @@ const Roadmap = () => {
             {data.roadmap.milestones.map((item, index) => (
               <div className="flex items-start" key={item.id}>
                 <div className="sm:mr-6 mr-3">
-                  <h2 className="mt-10 scroll-m-20 pb-2 text-3xl font-semibold tracking-tight transition-colors first:mt-0">
+                  <h2 className="text-white mt-10 scroll-m-20 pb-2 text-3xl font-semibold tracking-tight transition-colors first:mt-0">
                     {item.title}
                   </h2>
                   <h3 className="text-[#ffffffb6] drop-shadow-2xl inter-var  mt-2 scroll-m-20 text-2xl font-medium tracking-tight">
@@ -69,7 +69,7 @@ const Roadmap = () => {
                   </p>
                 </div>
                 <BorderGradientCard
-                  className="font-mono p-3 sm:text-8xl text-6xl leading-[1] rounded-[22px] sm:p-10 bg-zinc-900"
+                  className="font-mono p-3 sm:text-8xl text-6xl leading-[1] rounded-[22px] sm:p-10 bg-zinc-900 text-white"
                   containerClassName="ml-auto sticky sm:top-48 top-48  right-0 w-fit"
                 >
                   0{item.id}

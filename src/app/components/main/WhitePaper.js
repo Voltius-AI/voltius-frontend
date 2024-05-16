@@ -28,12 +28,12 @@ const WhitePaper = () => {
           <div className="bg-black text-gray-300 opacity-70 backdrop-blur-3xl z-40 px-6 py-8">
             <h2
               className={cn(
-                "will-change-transform scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-6xl"
+                "will-change-transform scroll-m-20 text-[2.275rem] sm:text-4xl font-extrabold tracking-tight lg:text-6xl"
                 // "bg-[radial-gradient(circle_farthest-side_at_0_100%,#00ccb1,transparent),radial-gradient(circle_farthest-side_at_100%_0,#7b61ff,transparent),radial-gradient(circle_farthest-side_at_100%_100%,#ffc414,transparent),radial-gradient(circle_farthest-side_at_0_0,#1ca0fb,#141316)]",
                 // "bg-[radial-gradient(circle_farthest-side_at_0_100%,#00ccb1,transparent),radial-gradient(circle_farthest-side_at_100%_0,#7b61ff,transparent),radial-gradient(circle_farthest-side_at_100%_100%,#ffc414,transparent),radial-gradient(circle_farthest-side_at_0_0,#1ca0fb,#141316)]"
               )}
             >
-              <svg className="h-[44px] lg:h-[60px]">
+              <svg className="h-[44px] lg:h-[60px] lg:w-[390px]">
                 <defs>
                   <linearGradient
                     id="rainbow_w"

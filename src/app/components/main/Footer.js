@@ -5,10 +5,10 @@ import React, { useCallback } from "react";
 const Footer = () => {
   return (
     <div className="mx-auto  mt-10 w-full antialiased border-t border-slate-700 border-opacity-40 pt-10 flex flex-col">
-      <div className="flex items-center justify-between w-full h-fit px-10 pb-8">
+      <div className="flex items-center justify-between w-full h-fit px-10 pb-8 sm:flex-row sm:gap-0 gap-4 flex-col">
         <img src="/logo_mono.svg" alt="" className="max-w-36 opacity-90" />
 
-        <div className="flex items-center gap-4 opacity-80">
+        <div className="flex items-center gap-4 opacity-80 drop-shadow-xl">
           <a
             href="https://twitter.com/voltiusai"
             target="_blank"
@@ -194,7 +194,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="flex w-full h-fit px-10 items-center sm:pb-7 pb-20">
-        <h6 className="text-sm text-slate-500 text-opacity-75 self-end opacity-65">
+        <h6 className="text-sm text-slate-500 text-opacity-75 self-end opacity-65 sm:text-left text-center">
           Copyright © {new Date().getFullYear()} Voltius. All rights reserved
         </h6>
         <hr className="border-0 flex-1 ml-5 h-[2px] bg-slate-500 opacity-25" />

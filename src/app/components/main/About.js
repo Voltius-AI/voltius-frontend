@@ -8,16 +8,16 @@ const About = () => {
     <ViewObserver valueId="about">
       <div
         id="about"
-        className="shadow-2xl rounded-t-3xl h-fit overflow-clip  w-full bg-black  bg-opacity-50 bg-dot-white/[0.2] relative flex items-center justify-center"
+        className="shadow-2xl h-fit overflow-clip  w-full bg-black  bg-opacity-50 bg-dot-white/[0.2] relative flex items-center justify-center"
       >
         <div className="absolute pointer-events-none inset-0 flex items-center justify-center bg-black [mask-image:radial-gradient(ellipse_at_center,transparent_50%,black)]"></div>
 
-        <div className="z-20 flex flex-col w-full max-w-screen-xl mx-5 sm:mx-10 sm:my-20 my-14">
+        <div className="z-20 flex flex-col w-full  max-w-screen-xl mx-5 sm:mx-10 sm:my-20 my-14">
           <h2
             style={{
               width: "fit-content",
             }}
-            className=" scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl"
+            className="scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl"
           >
             <svg className="h-[44px] lg:h-[60px]">
               <defs>

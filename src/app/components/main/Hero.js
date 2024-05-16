@@ -22,7 +22,7 @@ const Hero = () => {
           id="home"
           className="mt-28 sm:mt-24 -z-50 min-h-screen h-full w-full flex flex-col items-center justify-center"
         >
-          <h1 className="text-center scroll-m-20 text-6xl font-extrabold tracking-tight leading-none md:text-7xl lg:text-[5rem] xl:text-8xl opacity-85">
+          <h1 className="text-center scroll-m-20 text-6xl font-extrabold tracking-tight leading-none md:text-7xl lg:text-[5rem] xl:text-8xl opacity-85 text-white">
             <span>Elevating Blockchain</span>
             <span>
               <br />
@@ -32,9 +32,7 @@ const Hero = () => {
               <span className="text-base font-normal tracking-normal">
                 with
               </span>
-              <svg
-                className="h-[60px] md:h-[72px] lg:h-[80px] xl:h-[96px] w-[60px] md:w-[72px] lg:w-[80px] xl:w-[96px]"
-              >
+              <svg className="h-[60px] md:h-[72px] lg:h-[80px] xl:h-[96px] w-[60px] md:w-[72px] lg:w-[80px] xl:w-[96px]">
                 <defs>
                   <linearGradient
                     id="rainbow"
@@ -56,7 +54,7 @@ const Hero = () => {
               </svg>
             </span>
           </h1>
-          <h4 className="mt-7 scroll-m-20 font-semibold tracking-tight opacity-75 lg:text-2xl] xl:text-3xl  text-xl mx-6 text-center">
+          <h4 className="mt-7 scroll-m-20 font-semibold tracking-tight opacity-75 lg:text-2xl] xl:text-3xl  text-xl mx-6 text-center text-white">
             Revolutionizing Smart Contract Security
           </h4>
 

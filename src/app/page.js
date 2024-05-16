@@ -12,7 +12,7 @@ import ContactUs from "./components/main/ContactUs";
 
 export default function Home() {
   return (
-    <div className="flex flex-col">
+    <div className="flex flex-col bg-black">
       <Header />
       <div className="fixed bottom-3 right-3 z-[12000]">
         <a
