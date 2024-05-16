@@ -76,13 +76,17 @@ const Card = ({ item }) => {
         alt=""
         className="aspect-16/9 w-full h-auto mb-4 rounded-xl"
       />
-      <h4 className="text-xl font-semibold tracking-wide">{item.title}</h4>
-      <p className="text-base font-normal line-clamp-6 tracking-wide">
+      <h4 className="text-xl font-semibold tracking-wide text-white">
+        {item.title}
+      </h4>
+      <p className="text-base font-normal line-clamp-6 tracking-wide text-white">
         {item.description}
       </p>
       <hr className="h-px  my-4 border-0 bg-gray-700"></hr>
       <div className="flex justify-between">
-        <p className="text-base font-medium">{format(item.createdAt, "PPP")}</p>
+        <p className="text-base font-medium text-white">
+          {format(item.createdAt, "PPP")}
+        </p>
 
         <a
           className="text-indigo-700"
