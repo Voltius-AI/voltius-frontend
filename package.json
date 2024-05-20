@@ -8,7 +8,7 @@
     "start": "next start",
     "lint": "next lint"
   },
-  "author": "Ayush Kumar Singh",
+  "author": "Aayush Giri",
   "dependencies": {
     "@react-hook/resize-observer": "^1.2.6",
     "@tanstack/react-query": "^5.32.0",
